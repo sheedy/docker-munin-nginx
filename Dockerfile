@@ -37,7 +37,7 @@ RUN /bin/sh -c 'echo root:munin | chpasswd'
 ADD conf/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # ports
-EXPOSE 22 80
+# EXPOSE 22 80
 
 # start all
 CMD ["/usr/bin/supervisord", "-n"]
